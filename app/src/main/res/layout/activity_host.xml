@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_host"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.phoenyx.musica.HostActivity">
+
+    <ListView
+        android:layout_width="0dp"
+        android:id="@+id/playlistListView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomBarLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="0dp"
+        android:scrollIndicators="right"
+        android:dividerHeight="2dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorAccent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/bottomBarLayout"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="64dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/currentSongImageView"
+            android:layout_weight="0.08"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:text="Music hasn't started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nowPlayingTextView"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20sp"
+            android:textColor="@android:color/background_light"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:maxLines="1"
+            android:scrollHorizontally="true" />
+
+        <Button
+            android:text="Start vote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startVoteButton"
+            android:layout_weight="0.08"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:enabled="false" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

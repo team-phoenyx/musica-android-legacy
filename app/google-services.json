@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "646631516532",
+    "firebase_url": "https://musica-92c0f.firebaseio.com",
+    "project_id": "musica-92c0f",
+    "storage_bucket": "musica-92c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646631516532:android:cbbab034f5186d2f",
+        "android_client_info": {
+          "package_name": "io.phoenyx.musica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646631516532-o7e7qf4i5khv81ausupe10ckpd0hdkeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1nw_aQ3TsViPcoV1z2ct6k_1XqiE_6v8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

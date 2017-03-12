@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/roomNameEditText"
+        android:hint="Room name"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColorHint="#80ede472"
+        android:backgroundTint="@color/colorAccent"
+        android:maxLength="32"
+        android:foregroundGravity="center_horizontal"
+        android:textColor="?attr/colorAccent" />
+
+    <TextView
+        android:text="Please enter room name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/errorTextView"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonsLayout"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            app:srcCompat="@drawable/spotify"
+            android:id="@+id/spotifyButton"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_width="220dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp" />
+
+        <ImageButton
+            android:layout_width="220dp"
+            app:srcCompat="@drawable/soundcloud"
+            android:id="@+id/soundcloudButton"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="4dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>
